@@ -1,2 +1,4 @@
 a=input("input no of studenst")
-print(a)
+student_list=[]
+x,y=map[a,input.split()]
+print (x,y)
