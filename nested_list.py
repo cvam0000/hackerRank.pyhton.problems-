@@ -4,8 +4,10 @@ for x in range (a):
 	small_list=[]
 	name=input()
 	marks=float(input())
-	small_list.append(name,marks)
+	small_list.append(name)
+	small_list.append(marks)
+	main_list.append(small_list)
+	del(small_list)
 
     
-print(name_l)
-print(marks_l)    
+print(main_list)
