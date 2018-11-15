@@ -24,7 +24,14 @@ for x in range(a):
 	if marks_sort[x]==second:
 		count+=1
 		result.append(x)
-
+last_list=[]
 print(result)
-#if count>1:  
-#print(main_list[position][0])
+m=len(result)
+while m!=0:
+	last_list.append(main_list[result[m-1]][0])
+	m=m-1
+last_list.sort()
+for x in range(len(last_list)):
+	print (last_list[x])	
+
+
