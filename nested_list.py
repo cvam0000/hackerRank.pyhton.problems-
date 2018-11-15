@@ -11,11 +11,20 @@ for x in range (a):
 	main_list.append(small_list)
 	del(small_list)
 first=second=1000
+count=0
 for x in marks_sort:
 	if x<first:
 		second=first
 		first=x
 	elif x<second and x!=first:
 		second=x
-position=marks_sort.index(second)    
-print(main_list[position][0])
+
+result=[]
+for x in range(a):
+	if marks_sort[x]==second:
+		count+=1
+		result.append(x)
+
+print(result)
+#if count>1:  
+#print(main_list[position][0])
