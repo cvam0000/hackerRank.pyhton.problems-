@@ -1,4 +1,4 @@
-a=int(input("input no of studenst"))
+a=int(input("input no of students"))
 main_list=[]
 marks_sort=[]
 for x in range (a):
@@ -11,14 +11,11 @@ for x in range (a):
 	main_list.append(small_list)
 	del(small_list)
 first=second=0
-
-for x in range (a):
+for x in marks_sort:
 	if x>first:
 		second=first
 		first=x
 	elif x>second and x!=first:
-			second=x
-
-
-prit (first,second)    
-print(main_list)
+		second=x
+position=marks_sort.index(second)    
+print(main_list[position][0])
