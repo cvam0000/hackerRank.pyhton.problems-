@@ -10,12 +10,12 @@ for x in range (a):
 	marks_sort.append(marks)
 	main_list.append(small_list)
 	del(small_list)
-first=second=0
+first=second=1000
 for x in marks_sort:
-	if x>first:
+	if x<first:
 		second=first
 		first=x
-	elif x>second and x!=first:
+	elif x<second and x!=first:
 		second=x
 position=marks_sort.index(second)    
 print(main_list[position][0])
