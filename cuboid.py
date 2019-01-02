@@ -7,7 +7,7 @@ if x>y and z>y:
 if y>x and z>x:
 	chotu=x
 else:
-	chotu=z 
+	chotu=z
 xr=[]
 yr=[]
 zr=[]
@@ -20,5 +20,9 @@ for lehsun in range (0,y):
 for lehsun in range (0,y):
 	zr.append(lehsun)
 for lehsun in range (0,chotu):
-	 if xr[lehsun]+yr[lehsun]+zr[lehsun]!=n:
-		sub_result.apped()
+	a=xr[lehsun]
+	b=yr[lehsun]
+	c=zr[lehsun]
+	if a+b+c != n:
+		result.append(a,b,c)
+print(result)		
