@@ -14,22 +14,22 @@ def remove_duplicates(values):
         if value not in seen:
             output.append(value)
             seen.add(value)
-    print(output)        
+    print(output)
 
 
 def funky(a,b,c):
 	for u in range (0,big):
 
 		for lehsun in range (0,z+1):
-			result.append((a,b,c))
+			result.append([a,b,c])
 			c+=1
 		c=0
 		for lehsun in range (0,y+1):
-			result.append((a,b,c))
+			result.append([a,b,c])
 			b+=1
 		b=0
 		for lehsun in range(0,x+1):
-			result.append((a,b,c))
+			result.append([a,b,c])
 			a+=1
 		a=0
 
