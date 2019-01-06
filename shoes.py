@@ -2,6 +2,7 @@ bada_list=[]
 chota_list=[]
 result=[]
 a=int(input())
+m=0
 list=[i for i in input().split(" ")]
 
 for lehsun in range(int(input())):
@@ -11,8 +12,11 @@ for lehsun in range(int(input())):
 
 
 for lehsun in bada_list:
-    for loda in list:
-        if lehsun[0]==loda:
+    for loda in range(a):
+        if lehsun[0]==list[loda]:
+            print(lehsun[1])
             result.append(int(lehsun[1]))
-            del loda
+            list[loda]=0.1
+
+
 print(sum(result))
