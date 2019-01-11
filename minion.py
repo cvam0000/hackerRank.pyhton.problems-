@@ -17,10 +17,10 @@ def minion_game(string):
 
 def sub_string(different):
     vov=['A' , 'E' , 'I' , 'O'  ,'U']
-    sub_strings=[]
+    sub_strings=[different[0]]
 
     for i in different:
-        sub_string.append(i)
+        sub_string.append('i+)
 
 
 
