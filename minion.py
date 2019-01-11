@@ -4,16 +4,20 @@ def minion_game(string):
         e.append(i)
     stuart=0
     kevin=0
+    sub_strings1=[]
+    sub_strings2=[]
     different=[]
-    vov=['A' , 'E' , 'I' , 'O'  ,'U']
     for i in string:
         if i not in different:
             different.append(i)
     print (different)
+    sub_string(different)
 
-    for i in different:
-        if i in vov:
 
+
+
+def sub_string(different):
+    vov=['A' , 'E' , 'I' , 'O'  ,'U']
 
 
 
