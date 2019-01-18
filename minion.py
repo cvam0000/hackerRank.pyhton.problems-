@@ -1,7 +1,8 @@
 
+def score(a,b,):
 
 
-def sep(list,vowels):
+def sep(list,vowels,string):
     vow=[]
     non=[]
     unique_list = []
@@ -14,7 +15,7 @@ def sep(list,vowels):
             vow.append(lehsun)
         else:
             non.append(lehsun)
-    score(vow,non)
+    score(vow,non,string)
 
 
 
@@ -34,7 +35,7 @@ def minion_game(string):
         for j in range(i,length):
             alist.append(string[i:j + 1]) 
     print(alist)        
-    sep(alist,vowels)
+    sep(alist,vowels,string)
 
 
 
