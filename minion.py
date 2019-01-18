@@ -1,32 +1,50 @@
+
+
+
+def sep(list,vowels):
+    vow=[]
+    non=[]
+    unique_list = []
+    for el in list:
+        if el not in unique_list:
+            unique_list.append(el)
+    
+    for lehsun in unique_list:
+        if lehsun[0] in vowels:
+            vow.append(lehsun)
+        else:
+            non.append(lehsun)
+    score(vow,non)
+
+
+
 def minion_game(string):
-    e=[]
-    for i in string:
-        e.append(i)
-    stuart=0
-    kevin=0
-
-    different=[]
-    for i in string:
-        if i not in different:
-            different.append(i)
-    print (different)
-    sub_string(different)
-
-
-
-
-def sub_string(different):
-    vov=['A' , 'E' , 'I' , 'O'  ,'U']
-    sub_strings=[different[0]]
-
-    for i in different:
-        sub_string.append('i+)
+    list=[]
+    vowels=['A','E','I','O','u']
+    vowel_in=[]
+    for x in string:
+        list.append(x)
+        if x in vowels:
+            vowel_in.append(x)
+    print (list)
+    print (vowel_in) 
+    length = len(string)
+    alist = []
+    for i in range(length):
+        for j in range(i,length):
+            alist.append(string[i:j + 1]) 
+    print(alist)        
+    sep(alist,vowels)
 
 
 
 
-#def check(string):
+              
 
 
 s = input()
 minion_game(s)
+
+
+
+
