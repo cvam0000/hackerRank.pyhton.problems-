@@ -1,5 +1,22 @@
 
-def score(a,b,):
+def score(a,b,string):
+    count_kevin=0
+    count_stuart=0
+    c=0
+    for lehsun in b:
+        while lehsun in string[c:]:
+            c=list[c:].find(lehsun)+1
+            count_stuart+=1
+            print (count_stuart)
+
+    for lehsun in a:
+        while lehsun in string[c:]:
+            c=list[c:].find(lehsun)+1
+            count_kevin+=1
+            print (count_kevin)
+            
+
+
 
 
 def sep(list,vowels,string):
