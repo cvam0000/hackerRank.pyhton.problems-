@@ -8,6 +8,7 @@ def change(string):
         elif naya[lehsun].isdigit():
             naya[lehsun]=naya[lehsun]    
         else:
-            naya[lesun]=na[lehsun].lower()   
+            naya[lehsun]=naya[lehsun].upper()   
+    return ''.join(naya)   
     return naya         
 
