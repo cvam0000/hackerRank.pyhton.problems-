@@ -1,2 +1,5 @@
-matrix = input([[int(j) for j in range(6)] for i in range(6)])
-print(matrix)
+arr=[[]]
+for i in range(6):
+    for j in range(6):
+        arr[i].append(input())
+print(arr)    
